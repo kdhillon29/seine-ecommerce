@@ -16,9 +16,9 @@ model User {
   email String @unique @db.VarChar(255)
   password String @db.VarChar(255)
   Product Product[]
-  
 }
-model Product{
+
+model Product {
   id Int @id @default(autoincrement())  
   title String @db.VarChar(255)
   description String @db.Text
