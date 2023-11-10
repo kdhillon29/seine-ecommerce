@@ -18,7 +18,7 @@ export async function POST(request: Request) {
   } = body;
 
   try {
-    const product = await prisma.Product.create({
+    const product = await prisma.product.create({
       data: {
         title,
         description,
@@ -45,7 +45,7 @@ export async function DELETE(req: Request) {
   const { productId, userId } = body;
 
   try {
-    const deletedProduct = await prisma.Product.delete({
+    const deletedProduct = await prisma.product.delete({
       where: {
         id: productId,
         userId: userId,
