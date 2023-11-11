@@ -6,7 +6,9 @@ import Container from './components/Container';
 
 export default  async function Home() {
   const user =await getCurrentUser()
-  console.log('user is ',user);
+  // debugger;
+  
+  // console.log('user is ',user);
 
   return (
     <main className="flex min-h-screen flex-col  justify-between p-2">

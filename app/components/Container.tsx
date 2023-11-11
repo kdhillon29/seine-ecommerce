@@ -6,6 +6,7 @@ import ProductItem from './ProductItem'
 type Props = {}
 
 const Container = (props: Props) => {
+  console.log('inside container')
   return (
     <div className='mb-[200px]'>
       <div className='flex '>
